@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GPUImage
 
 // MARK:- 系统回调方法
 class ViewController: UIViewController {
@@ -40,14 +39,12 @@ class ViewController: UIViewController {
     // MARK:- 点击磨皮、美白
     @IBAction func tagMMBtn(_ sender: UIButton) {
         
-        let vc = GPUViewController()
-        
-        self.present(vc, animated: true, completion: nil)
+        self.present(GPUViewController(), animated: true, completion: nil)
     }
     
     // MARK:- 点击美颜实战
     @IBAction func tagMYBtn(_ sender: UIButton) {
-        
+          self.present(MeiYanViewController(), animated: true, completion: nil)
     }
     
 }

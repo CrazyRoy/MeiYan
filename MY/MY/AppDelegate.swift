@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window?.makeKeyAndVisible()
         
-        self.window?.rootViewController = GPUViewController()
+        self.window?.rootViewController = ViewController()
         
         return true
     }

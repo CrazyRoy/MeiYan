@@ -11,6 +11,7 @@
 		6B82A18E1DA90D5600810B48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B82A18D1DA90D5600810B48 /* ViewController.swift */; };
 		6B82A1931DA90D5600810B48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B82A1921DA90D5600810B48 /* Assets.xcassets */; };
 		6B82A1961DA90D5600810B48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B82A1941DA90D5600810B48 /* LaunchScreen.storyboard */; };
+		6BB23D4D1DAF562B000C941C /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB23D4C1DAF562B000C941C /* GPUImageBeautifyFilter.m */; };
 		6BD6CF351DAE7EB3004A11AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6CF331DAE7EB3004A11AB /* Main.storyboard */; };
 		6BD6CF381DAE814A004A11AB /* GPUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD6CF361DAE814A004A11AB /* GPUViewController.swift */; };
 		6BD6CF391DAE814A004A11AB /* GPUViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BD6CF371DAE814A004A11AB /* GPUViewController.xib */; };
@@ -30,6 +31,8 @@
 		6B82A1951DA90D5600810B48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B82A1971DA90D5600810B48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6B82A19D1DA90E2C00810B48 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		6BB23D4B1DAF562B000C941C /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		6BB23D4C1DAF562B000C941C /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 		6BD6CF341DAE7EB3004A11AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6BD6CF361DAE814A004A11AB /* GPUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GPUViewController.swift; sourceTree = "<group>"; };
 		6BD6CF371DAE814A004A11AB /* GPUViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GPUViewController.xib; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		6B82A18A1DA90D5600810B48 /* MY */ = {
 			isa = PBXGroup;
 			children = (
+				6BB23D4A1DAF562B000C941C /* GPUImageBeautifyFilter */,
 				6B82A18B1DA90D5600810B48 /* AppDelegate.swift */,
 				6B82A18D1DA90D5600810B48 /* ViewController.swift */,
 				6BD6CF3E1DAE8202004A11AB /* ViewController.xib */,
@@ -95,6 +99,15 @@
 				6B82A19D1DA90E2C00810B48 /* BridgeHeader.h */,
 			);
 			path = MY;
+			sourceTree = "<group>";
+		};
+		6BB23D4A1DAF562B000C941C /* GPUImageBeautifyFilter */ = {
+			isa = PBXGroup;
+			children = (
+				6BB23D4B1DAF562B000C941C /* GPUImageBeautifyFilter.h */,
+				6BB23D4C1DAF562B000C941C /* GPUImageBeautifyFilter.m */,
+			);
+			path = GPUImageBeautifyFilter;
 			sourceTree = "<group>";
 		};
 		9047F2A75882F5B62DDF4121 /* Frameworks */ = {
@@ -233,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B82A18E1DA90D5600810B48 /* ViewController.swift in Sources */,
+				6BB23D4D1DAF562B000C941C /* GPUImageBeautifyFilter.m in Sources */,
 				6B82A18C1DA90D5600810B48 /* AppDelegate.swift in Sources */,
 				6BD6CF381DAE814A004A11AB /* GPUViewController.swift in Sources */,
 				6BD6CF3C1DAE8159004A11AB /* MeiYanViewController.swift in Sources */,
@@ -279,6 +293,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -329,6 +344,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -365,6 +381,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cqut.coderLL.MY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MY/BridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -380,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cqut.coderLL.MY;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = MY/BridgeHeader.h;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

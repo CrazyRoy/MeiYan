@@ -20,7 +20,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Co-DA-mrq">
                     <color key="backgroundColor" red="0.050980392839999999" green="0.35294118520000001" blue="0.26274511220000002" alpha="0.74844820205479456" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="美颜实战">
+                    <state key="normal" title="美颜 | 实战">
                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <userDefinedRuntimeAttributes>

@@ -9,7 +9,7 @@
 import UIKit
 import GPUImage
 
-class GPUViewController: ViewController {
+class GPUViewController: UIViewController {
     
     var videoCamera : GPUImageVideoCamera!
     
@@ -24,12 +24,12 @@ class GPUViewController: ViewController {
         // 1. 创建视频源
         // SessionPreset:屏幕的分辨率， AVCaptureSessionPresetHight会自适应高分辨率
         // cameraPosition:摄像头方向
-        let videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: AVCaptureDevicePosition.front)
+        let videoCamera = GPUImageVideoCamera(sessionPreset: AVCaptureSessionPresetHigh, cameraPosition: AVCaptureDevicePosition.back)
         videoCamera?.outputImageOrientation = UIInterfaceOrientation.portrait
         self.videoCamera = videoCamera
         
         // 2. 创建最终预览view
-        let caputureVideoPreview = GPUImageView(frame: self.view.bounds)
+        let caputureVideoPreview = GPUImageView(frame: UIScreen.main.bounds)
         self.view.insertSubview(caputureVideoPreview, at: 0)
         
         // 3. 创建滤镜： 磨皮，美白， 组合滤镜
@@ -67,10 +67,16 @@ class GPUViewController: ViewController {
     
     // MARK:- 磨皮
     @IBAction func bilateralFilter(_ sender: UISlider) {
-        
+    
         // 值越小，磨皮效果越好
         let maxValue : CGFloat = 10
         self.bilateralFilter?.distanceNormalizationFactor = (maxValue - CGFloat(sender.value))
     }
     
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
+        
+        self.dismiss(animated: true, completion: nil)
+    }
 }

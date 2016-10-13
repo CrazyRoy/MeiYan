@@ -26,13 +26,15 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-FN-LaW">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.34999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="s9K-FN-LaW">
+                    <color key="thumbTintColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="brightnessFilter:" destination="-1" eventType="valueChanged" id="Uyo-LL-gux"/>
                     </connections>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-9j-M9H">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="5" maxValue="15" translatesAutoresizingMaskIntoConstraints="NO" id="Sei-9j-M9H">
                     <color key="tintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="0.75321061643835618" colorSpace="calibratedRGB"/>
+                    <color key="thumbTintColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                     <connections>
                         <action selector="bilateralFilter:" destination="-1" eventType="valueChanged" id="H0n-Vh-IBe"/>
                     </connections>

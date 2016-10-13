@@ -15,4 +15,5 @@
 
 // ======= 桥接文件 =======
 
-#import "GPUImage.h"
+#import <GPUImage/GPUImage.h>
+#import "GPUImageBeautifyFilter.h"
